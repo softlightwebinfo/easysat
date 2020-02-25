@@ -1,0 +1,96 @@
+.Btn {
+  $then: &;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  transition: all .4s;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  &::before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: #4ce1b6;
+    transition: width .3s ease-in-out, height .3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+  }
+  &:active:before,
+  &:active:focus:before,
+  &:focus:before,
+  &:hover:before {
+    height: 500%;
+    width: 225%;
+  }
+  &:not(:disabled), &:not(&--disabled) {
+    cursor: pointer;
+  }
+  &--primary {
+    background-color: #70bbfd;
+    border-color: #70bbfd;
+
+    &#{$then}--outline {
+      color: #70bbfd;
+      border-color: #70bbfd;
+      background-color: initial;
+      background-image: none;
+    }
+    &:before {
+      background-color: #3ea3fc;
+    }
+    &:hover {
+      border-color: #3ea3fc;
+      &#{$then}--outline {
+        color: white;
+      }
+    }
+  }
+  &--danger {
+    background-color: #f5222d;
+    border-color: #f5222d;
+
+    &#{$then}--outline {
+      color: #f5222d;
+      border-color: #f5222d;
+      background-color: initial;
+      background-image: none;
+    }
+    &:before {
+      background-color: #e0222b;
+    }
+    &:hover {
+      border-color: #e0222b;
+      &#{$then}--outline {
+        color: white;
+      }
+    }
+  }
+  &--icon {
+    display: inline-flex;
+    padding: 9px;
+    align-items: center;
+    justify-content: center;
+    > .Icon {
+      margin: 0;
+    }
+  }
+}

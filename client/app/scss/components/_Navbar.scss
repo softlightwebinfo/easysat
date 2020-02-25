@@ -1,0 +1,9 @@
+$Navbar-height: 60px!default;
+.Navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: $Navbar-height;
+  z-index: 101;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .05)
+}

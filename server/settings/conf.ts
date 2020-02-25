@@ -1,0 +1,1 @@
+export const JWT_SECRET = process.env.TOKEN_SECRET || 'EasySat@Secret';

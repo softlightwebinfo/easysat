@@ -1,0 +1,62 @@
+$Toolbar__button-height: 60px !default;
+.Toolbar {
+  width: 100%;
+  background-color: white;
+  min-height: $Toolbar__button-height;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .05);
+  &__wrapper {
+    position: relative;
+    display: flex;
+    height: $Toolbar__button-height;
+  }
+  &__left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    height: $Toolbar__button-height;
+    display: flex;
+  }
+  &__logo {
+    margin: auto 0;
+    display: none;
+    height: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__collapse {
+    position: relative;
+    display: none;
+    @media screen and (min-width: 568px) {
+      display: block;
+    }
+  }
+  &__button {
+    width: $Toolbar__button-height;
+    height: $Toolbar__button-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    &--desktop {
+      display: none;
+      @media screen and (min-width: 576px) {
+        display: flex;
+      }
+    }
+    &--mobile {
+      @media screen and (min-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}

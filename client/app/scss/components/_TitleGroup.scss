@@ -1,0 +1,23 @@
+.TitleGroup {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 4px solid #70bbfd;
+  &__title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  &__logo {
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    &-accent {
+      color: #70bbfd;
+    }
+  }
+  &__subtitle{
+    font-size: 12px;
+    color: #999;
+  }
+}

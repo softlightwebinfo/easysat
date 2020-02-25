@@ -1,0 +1,32 @@
+const nextRoutes = require('next-routes');
+const routes = module.exports = nextRoutes();
+routes
+    .add('index', '/')
+    .add('login')
+    .add('perfil')
+    .add('usuarios')
+    .add('usuariosRegistro', '/usuarios/registro')
+    .add('usuariosActualizar', '/usuarios/:id')
+    .add('productos')
+    .add('productosRegistro', '/productos/registro')
+    .add('productosActualizar', '/productos/:id')
+    .add('categorias')
+    .add('categoriasRegistro', '/categorias/registro')
+    .add('categoriasActualizar', '/categorias/:id')
+    .add('roles')
+    .add('rolesRegistro', '/roles/registro')
+    .add('rolesActualizar', '/roles/:id')
+    .add('clientes')
+    .add('clientesRegistro', '/clientes/registro')
+    .add('clientesActualizar', '/clientes/:id')
+    .add('clientesDetalle', '/clientes/:id/perfil')
+    .add('empresas')
+    .add('empresasRegistro', '/empresas/registro')
+    .add('empresasActualizar', '/empresas/:id')
+    .add('empresasDetalle', '/empresas/:id/perfil')
+    .add('estadisticas')
+    //No standard
+    .add('reparaciones')
+    .add('reparacionesRegistro', '/reparaciones/nueva-reparacion')
+    .add('reparacionesActualizar', '/reparaciones/:id')
+    .add('estadisticasGlobales', '/estadisticas-globales');

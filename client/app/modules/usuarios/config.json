@@ -1,0 +1,13 @@
+{
+  "ruta": {
+    "name": "usuarios",
+    "pages": [
+      {
+        "route": "/usuarios",
+        "name": "Listado de usuarios"
+      }
+    ],
+    "active": true
+  },
+  "limit": 20
+}

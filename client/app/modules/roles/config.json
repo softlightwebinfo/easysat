@@ -1,0 +1,9 @@
+{
+  "ruta": {
+    "name": "roles",
+    "pages": [
+    ],
+    "active": true
+  },
+  "limit": 20
+}

@@ -1,0 +1,9 @@
+{
+  "ruta": {
+    "name": "productos",
+    "pages": [
+    ],
+    "active": true
+  },
+  "limit": 20
+}

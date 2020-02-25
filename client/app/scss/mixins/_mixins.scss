@@ -1,0 +1,36 @@
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin shadow($attr...) {
+  -webkit-box-shadow: $attr;
+  -moz-box-shadow: $attr;
+  box-shadow: $attr;
+  -o-box-shadow: $attr;
+  -ms-box-shadow: $attr;
+}
+
+@mixin shadowText($attr...) {
+  text-shadow: $attr;
+}
+
+@mixin transition($attr...) {
+  transition: $attr;
+  -webkit-transition: $attr;
+  -moz-transition: $attr;
+  -o-transition: $attr;
+  -ms-transition: $attr;
+}

@@ -1,0 +1,53 @@
+.Table {
+  $then: &;
+  width: 100%;
+  display: table;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &-responsive {
+    overflow-x: auto;
+  }
+  &__col {
+    display: table-cell;
+    padding: 4px 56px 4px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    vertical-align: inherit;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+  &__row {
+    color: inherit;
+    height: 47px;
+    display: table-row;
+    outline: none;
+    vertical-align: middle;
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #f2f4f7;
+    }
+  }
+  &__thead {
+    display: table-header-group;
+    background-color: #eff1f5;
+    #{$then}__row {
+      height: 56px;
+    }
+    #{$then}__col{
+      font-weight: bold;
+    }
+  }
+  &__tbody {
+    display: table-row-group;
+    #{$then}__col {
+      color: #646777;
+    }
+  }
+
+}

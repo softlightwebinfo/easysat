@@ -1,0 +1,14 @@
+$Dashboard-body: 100vh !default;
+.Dashboard-body {
+  padding-left: 8px;
+  //padding-top: 90px;
+  min-height: $Dashboard-body;
+  transition: padding-left .3s;
+  background: #f2f4f7;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  @media screen and (min-width: 576px) {
+    padding-left: 250px;
+  }
+}

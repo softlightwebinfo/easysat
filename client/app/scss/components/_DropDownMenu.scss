@@ -1,0 +1,13 @@
+.DropDownMenu {
+  width: 200px;
+  border-radius: 0;
+  border: none;
+  padding: 15px 0;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .05);
+  margin-top: 0;
+  background: #fff;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    left: 0 !important;
+  }
+}

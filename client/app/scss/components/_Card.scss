@@ -1,0 +1,41 @@
+.Card {
+  background-color: rgba(0, 10, 16, .8);
+  color: #FFF;
+  padding: 50px 60px;
+  max-width: 520px;
+  width: 100%;
+  &--default {
+    max-width: 100%;
+    //margin-bottom: 1rem;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border-radius: .25rem;
+    padding: 0;
+    width: 100%;
+  }
+  &__title {
+    font-size: 13px;
+    color: #646777;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  &__number {
+    font-size: 24px;
+    margin-right: auto;
+    padding-right: 10px;
+    color: #646777;
+    margin-top: 10px;
+  }
+  &__body {
+    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100%;
+    border-radius: 5px;
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ruta": {
+    "name": "categorias",
+    "pages": [
+    ],
+    "active": true
+  },
+  "limit": 20
+}

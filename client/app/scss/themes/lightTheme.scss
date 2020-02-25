@@ -1,0 +1,34 @@
+.Theme-light {
+  .DropDownMenu {
+    background: #fff;
+  }
+  .Icon {
+    color: #ddd;
+  }
+  .Texto {
+    color: #646777;
+  }
+  .ListItem {
+    &:hover {
+      background-color: #fafbfe;
+    }
+  }
+  .Divider {
+    border-top: 1px solid #eff1f5;
+  }
+  .Dashboard-aside-block {
+    border-bottom: 1px solid #eff1f5;
+  }
+  .Card {
+    &__title,
+    &__number {
+      color: #646777;
+    }
+  }
+  .TituloGrupo {
+    &__titulo,
+    &__subtitulo {
+      color: #646777;
+    }
+  }
+}

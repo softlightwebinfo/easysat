@@ -1,0 +1,13 @@
+.Input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 12px;
+  height: 32px;
+  border: 1px solid #f2f4f7;
+  color: black;
+  transition: border .3s;
+  background: transparent;
+  &--color-white {
+    color: #fff;
+  }
+}

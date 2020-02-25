@@ -1,0 +1,12 @@
+.Group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  > * {
+    margin-right: .5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

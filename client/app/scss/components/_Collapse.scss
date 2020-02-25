@@ -1,0 +1,15 @@
+.Collapse {
+  position: relative;
+  &__trigger {
+  }
+  &__collapse {
+    display: none;
+    background-color: whitesmoke;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &--open {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

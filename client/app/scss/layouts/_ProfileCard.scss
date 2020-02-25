@@ -1,0 +1,11 @@
+.ProfileCard {
+  &__avatar {
+    @media #{$--md-viewport} {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__row {
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,15 @@
+.TituloGrupo {
+  &__titulo {
+    color: #646777;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__subtitulo {
+    color: #646777;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0;
+    opacity: .6;
+  }
+}

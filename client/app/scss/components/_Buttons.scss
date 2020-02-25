@@ -1,0 +1,17 @@
+.Buttons {
+  $then: &;
+  display: flex;
+  width: calc(100% + 10px);
+  margin: -10px 0 -20px -10px;
+  &--center {
+    justify-content: center;
+  }
+  > * {
+    margin: 10px 0 20px 10px;
+    white-space: nowrap;
+    flex: 1;
+  }
+  &--center > * {
+    flex: none;
+  }
+}
