@@ -46,7 +46,7 @@
     "mobx-react": "^5.3.6",
     "next": "^7.0.2",
     "next-routes": "^1.4.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "nookies": "^1.2.0",
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.2",
