@@ -16,7 +16,7 @@
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "helmet": "^3.15.0",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.22.2",
     "nodemon": "^1.18.8",
     "pg-promise": "^8.5.3",
